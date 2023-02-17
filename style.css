@@ -1,0 +1,17 @@
+#gridContainer {
+    width: 50vw;
+    height: 50vw;
+    border: solid black 2px;
+    display: flex;
+    flex-direction: column;
+}
+
+.gridRow {
+    flex: 1;
+    display: flex;
+}
+
+.gridElement {
+    flex: 1;
+    border: solid grey 1px;
+}
