@@ -3,6 +3,7 @@ body {
     display: flex;    
     flex-direction: column;
     align-items: center;
+    font-family: "Roboto", sans-serif;
 }
 
 #gridContainer {
@@ -21,3 +22,11 @@ body {
 .gridElement {
     flex: 1;
 }
+
+.settings {
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+

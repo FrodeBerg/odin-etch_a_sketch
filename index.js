@@ -1,11 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
-    createDivs(16);
+    createDivs();
 });
 
-let currentColor = "#000"
+function createDivs(){
 
-function createDivs(amount){
-
+    let amount = +document.getElementById("amount").value;
+    if (amount > 100) amount = 100;
+    document.getElementById("amount").value = amount;
+    
     let gridContainer = document.getElementById("gridContainer");
     gridContainer.innerHTML = "";
 
@@ -23,5 +25,6 @@ function createDivs(amount){
 }
 
 function colorSquare(element){
+    let currentColor = document.getElementById("color").value;
     element.style.backgroundColor = currentColor;
 }
